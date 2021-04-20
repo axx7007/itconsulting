@@ -1,4 +1,4 @@
-import { FacebookF } from "@styled-icons/fa-brands/FacebookF"
+import { Facebook } from "@styled-icons/boxicons-logos/Facebook"
 import { Twitter } from "@styled-icons/bootstrap/Twitter"
 import { Linkedin } from "@styled-icons/boxicons-logos/Linkedin"
 import { MessageRoundedDots } from '@styled-icons/boxicons-solid/MessageRoundedDots'
@@ -17,9 +17,9 @@ z-index: 3;
 margin-top: 320px;
 `
 
-export const Facebook = styled(FacebookF)`
-width: 20px;
-height: 20px;
+export const FacebookIcon = styled(Facebook)`
+width: 25px;
+height: 25px;
 cursor: pointer;
 `
 export const TwitterLogo = styled(Twitter)`

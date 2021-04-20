@@ -1,17 +1,22 @@
-import React from 'react'
-import {Container, Facebook, Message, ItemWrapper, TwitterLogo, In} from './style'
-const Social=()=>{
-    return(
-        <Container> 
-            <Facebook />
-            <TwitterLogo />
-            <In />
-            <ItemWrapper>
-                <Message />
-            </ItemWrapper>
-
-        </Container>
-
-    )
-}
-export default Social
+import React from "react";
+import {
+  Container,
+  FacebookIcon,
+  Message,
+  ItemWrapper,
+  TwitterLogo,
+  In,
+} from "./style";
+const Social = () => {
+  return (
+    <Container>
+      <FacebookIcon />
+      <TwitterLogo />
+      <In />
+      <ItemWrapper>
+        <Message />
+      </ItemWrapper>
+    </Container>
+  );
+};
+export default Social;
