@@ -1,18 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import Services from "../Services";
 
-import {
-  NavLink,
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect,
-  useLocation,
-  useParams,
-} from "react-router-dom";
-import { NavHashLink } from "react-router-hash-link";
+import { NavLink, BrowserRouter as Router } from "react-router-dom";
 import { Container, Logo, FadeWrapper, Menu, MenuName } from "./style";
 class Navbar extends React.Component {
   constructor(props) {

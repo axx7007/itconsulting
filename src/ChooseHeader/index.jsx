@@ -12,7 +12,7 @@ import {
   WhyButton,
 } from "./style";
 import why from "../assets/why.jpg";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const ChooseHeader = () => {
   return (
     <Container>
