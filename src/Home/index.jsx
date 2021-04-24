@@ -3,16 +3,18 @@ import Header from "../Header";
 import Services from "../Services";
 import ReadyCard from "../ReadyCard";
 import FootMedia from "../FootMedia";
+import Carousel from "../Carousel";
 import Footer from "../Footer";
 import { Container } from "./style";
 const Home = () => {
   return (
     <Container>
       <Header />
-      <Services />
+      <Services id="services" />
+      <Carousel />
       <ReadyCard />
       <FootMedia />
-      <Footer />
+      <Footer id="contact" />
     </Container>
   );
 };

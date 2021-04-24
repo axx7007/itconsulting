@@ -23,6 +23,7 @@ border: 5px solid #1A2B6D;
 }
 
 `
+
 Logo.Title = styled.h1`
 font-size: 26px;
 color:#1A2B6D;
@@ -36,6 +37,10 @@ padding: 0px 23px;
 &:hover{
     color: #D41317;
 }
+`
+export const Hyper = styled.a`
+
+
 `
 export const Menu = styled.div`
 display: flex;

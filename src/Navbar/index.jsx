@@ -1,7 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-
-import { NavLink, BrowserRouter as Router } from "react-router-dom";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import { Container, Logo, FadeWrapper, Menu, MenuName } from "./style";
 class Navbar extends React.Component {
   constructor(props) {
@@ -24,7 +23,11 @@ class Navbar extends React.Component {
         <FadeWrapper>
           <Fade right>
             <Menu>
-              <NavLink activeStyle={{ textDecoration: "none" }} to="/home">
+              <NavLink
+                style={{ textDecoration: "none" }}
+                activeStyle={{ textDecoration: "none" }}
+                to="/home"
+              >
                 <MenuName
                   active={this.state.active === "home"}
                   onClick={() => onChange("home")}
@@ -32,7 +35,11 @@ class Navbar extends React.Component {
                   Home
                 </MenuName>
               </NavLink>
-              <NavLink to="/whychoose">
+              <NavLink
+                to="/whychoose"
+                style={{ textDecoration: "none" }}
+                activeStyle={{ textDecoration: "none" }}
+              >
                 <MenuName
                   active={this.state.active === "why"}
                   onClick={() => onChange("why")}
@@ -40,17 +47,26 @@ class Navbar extends React.Component {
                   Why Choose Us
                 </MenuName>
               </NavLink>
-
-              <NavLink to="/service">
-                <MenuName
-                  active={this.state.active === "our"}
-                  onClick={() => onChange("our")}
+              <HashRouter>
+                <NavLink
+                  to="/services"
+                  style={{ textDecoration: "none" }}
+                  activeStyle={{ textDecoration: "none" }}
                 >
-                  Our Services
-                </MenuName>
-              </NavLink>
+                  <MenuName
+                    active={this.state.active === "our"}
+                    onClick={() => onChange("our")}
+                  >
+                    Our Services
+                  </MenuName>
+                </NavLink>
+              </HashRouter>
 
-              <NavLink to="/industries">
+              <NavLink
+                to="/industries"
+                style={{ textDecoration: "none" }}
+                activeStyle={{ textDecoration: "none" }}
+              >
                 <MenuName
                   active={this.state.active === "industries"}
                   onClick={() => onChange("industries")}
@@ -58,7 +74,12 @@ class Navbar extends React.Component {
                   Industries
                 </MenuName>
               </NavLink>
-              <NavLink to="/#contact">
+              <NavLink
+                to="/footer"
+                style={{ textDecoration: "none" }}
+                activeStyle={{ textDecoration: "none" }}
+                e
+              >
                 <MenuName
                   active={this.state.active === "contact"}
                   onClick={() => onChange("contact")}

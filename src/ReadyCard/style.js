@@ -1,16 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-margin-top: 280px;
 display: flex;
 align-items: center;
-justify-content: center;
-margin-bottom: 100px;
+margin-bottom: 30px;
 height: 663px;
-/* border: 1px solid black; */
 display: flex;
 flex-direction: column;
-margin-top: 700px;
 
 `
 export const TopLine = styled.div`
