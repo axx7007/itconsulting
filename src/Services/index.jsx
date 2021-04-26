@@ -1,11 +1,14 @@
 import React from "react";
-import { Container, AntCarousel, Header, Content, Card, Button } from "./style";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Learn from "../Learn";
+import { Container, Header, Content, Card, Button } from "./style";
 import { CardData } from "../data/CardData";
 import Fade from "react-reveal/Fade";
 
 const Services = () => {
   return (
-    <Container>
+    <Container id="services">
       <Header>
         <Container.Title>
           <Fade top>Our Services</Fade>
@@ -26,7 +29,9 @@ const Services = () => {
                 <Card.Title>{value.title}</Card.Title>
                 <Card.Text>{value.text}</Card.Text>
               </Fade>
-              <Button>+ Learn More</Button>
+              <NavLink style={{ textDecoration: "none" }} to="/learn">
+                <Button>+ Learn More</Button>
+              </NavLink>
             </Card>
           );
         })}

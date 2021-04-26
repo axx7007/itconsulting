@@ -1,6 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Link } from "react-scroll";
+import { BrowserRouter, NavLink } from "react-router-dom";
 import { Container, Logo, FadeWrapper, Menu, MenuName } from "./style";
 class Navbar extends React.Component {
   constructor(props) {
@@ -47,20 +48,21 @@ class Navbar extends React.Component {
                   Why Choose Us
                 </MenuName>
               </NavLink>
-              <HashRouter>
-                <NavLink
-                  to="/services"
-                  style={{ textDecoration: "none" }}
-                  activeStyle={{ textDecoration: "none" }}
+              <MenuName
+                active={this.state.active === "our"}
+                onClick={() => onChange("our")}
+              >
+                <Link
+                  activeStyle="active"
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                 >
-                  <MenuName
-                    active={this.state.active === "our"}
-                    onClick={() => onChange("our")}
-                  >
-                    Our Services
-                  </MenuName>
-                </NavLink>
-              </HashRouter>
+                  Our Services
+                </Link>
+              </MenuName>
 
               <NavLink
                 to="/industries"
@@ -74,19 +76,20 @@ class Navbar extends React.Component {
                   Industries
                 </MenuName>
               </NavLink>
-              <NavLink
-                to="/footer"
-                style={{ textDecoration: "none" }}
-                activeStyle={{ textDecoration: "none" }}
-                e
+              <MenuName
+                active={this.state.active === "contact"}
+                onClick={() => onChange("contact")}
               >
-                <MenuName
-                  active={this.state.active === "contact"}
-                  onClick={() => onChange("contact")}
+                <Link
+                  spy={true}
+                  to="footer"
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                 >
                   Contact Us
-                </MenuName>
-              </NavLink>
+                </Link>
+              </MenuName>
             </Menu>
           </Fade>
         </FadeWrapper>

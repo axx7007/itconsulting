@@ -11,7 +11,7 @@ import {
 
 const Footer = (props) => {
   return (
-    <Container>
+    <Container id="footer">
       <Container.Title>Contact Us</Container.Title>
       <Inputs>
         <InputWrapper>
