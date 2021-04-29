@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
 import { BrowserRouter, NavLink } from "react-router-dom";
-import { Container, Logo, FadeWrapper, Menu, MenuName } from "./style";
+import { Container, Logo, Menu, ItemWrapper, MenuName } from "./style";
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -19,14 +19,17 @@ class Navbar extends React.Component {
     return (
       <Container>
         <Logo>
-          <Logo.Title>ITG</Logo.Title>
+          <Logo.Title>PRO-IT</Logo.Title>
         </Logo>
-        <FadeWrapper>
+        <ItemWrapper>
           <Fade right>
             <Menu>
               <NavLink
-                style={{ textDecoration: "none" }}
-                activeStyle={{ textDecoration: "none" }}
+                style={{ marginLeft: "5%" }}
+                style={({ textDecoration: "none" }, { marginRight: "5%" })}
+                activeStyle={
+                  ({ textDecoration: "none" }, { marginRight: "5%" })
+                }
                 to="/home"
               >
                 <MenuName
@@ -92,7 +95,7 @@ class Navbar extends React.Component {
               </MenuName>
             </Menu>
           </Fade>
-        </FadeWrapper>
+        </ItemWrapper>
       </Container>
     );
   }

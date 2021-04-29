@@ -8,7 +8,7 @@ import Footer from "../Footer";
 import { Container } from "./style";
 const Home = () => {
   return (
-    <Container>
+    <Container id="home">
       <Header />
       <Services id="services" />
       <Carousel />

@@ -9,6 +9,10 @@ width: 100%;
 height: fit-content;
 margin-top: 450px;
 position: relative;
+@media screen and (max-width: 1070px){
+    margin: 0;
+    margin-top: 50px;
+}
 `
 export const Header = styled.div`
 height: 384px;
@@ -21,11 +25,15 @@ font-size: 55px;
 margin: 0;
 padding: 0;
 font-weight: 100;
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+font-family: 'Spinnaker', sans-serif;
 `
 Container.Text = styled.p`
 color: #ffffff;
 font-size: 16px;
 line-height: 35px;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+font-family: "Manrope", sans-serif;
 `
 export const Content = styled.div`
 padding: 0% 15%;
@@ -42,7 +50,7 @@ flex:1;
 /* justify-content: center; */
 flex-direction: column;
 /* width: 279px; */
-height: 329px;
+height: fit-content;
 padding: 30px;
 background-color: #F2F2F2;
 box-shadow: 15px 15px grey;
@@ -56,8 +64,8 @@ padding: 0;
 letter-spacing: 2px;
 width: 70%;
 line-height: 40px;
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
-font-family: 'Inconsolata', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+font-family: 'Spinnaker', sans-serif;
 `
 Card.Text = styled.p`
 color: #000000;
@@ -75,5 +83,7 @@ color: #D41317;
 font-size: 18px;
 margin: 0;
 padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+font-family: "Manrope", sans-serif;
 margin-top: 20px;
 `

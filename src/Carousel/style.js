@@ -8,11 +8,20 @@ background-color: #F2F2F2;
 display: flex;
 flex-direction: column;
 justify-content: center;
+@media screen and (max-width: 1070px){
+    display: flex;
+}
 `
 Container.Title = styled.h1`
 color: #1A2B6D;
 letter-spacing: 2px;
 font-size: 38px;
+@media screen and (max-width: 1070px){
+    /* display: flex; */
+    font-size: 30px;
+    @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+font-family: 'Spinnaker', sans-serif;
+}
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 font-family: 'Spinnaker', sans-serif;
 `
@@ -23,6 +32,11 @@ letter-spacing: 2px;
 font-size: 35px;
 line-height: 50px;
 margin-top: 20px;
+@media screen and (max-width: 1070px){
+    font-size: 28px;
+    @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+font-family: 'Spinnaker', sans-serif;
+}
 `
 
 export const Author = styled.h2`

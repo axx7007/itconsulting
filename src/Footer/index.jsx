@@ -7,6 +7,7 @@ import {
   InputName,
   Input,
   Submit,
+  SubmitWrapper,
 } from "./style";
 
 const Footer = (props) => {
@@ -23,9 +24,15 @@ const Footer = (props) => {
           <Input placeholder="Email" />
         </InputWrapper>
       </Inputs>
-      <InputName margin>Type your Message Here...</InputName>
-      <TextArea placeholder="Message" />
-      <Submit>Submit</Submit>
+      <InputWrapper>
+        <Inputs text={true}>
+          <InputName margin>Type your Message Here...</InputName>
+          <TextArea placeholder="Message" />
+          <SubmitWrapper>
+            <Submit>Submit</Submit>
+          </SubmitWrapper>
+        </Inputs>
+      </InputWrapper>
       <Inputs>
         <Inputs.Adress>
           Address. 500 Terry Francois Street San Francisco, CA 94158

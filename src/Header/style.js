@@ -5,33 +5,57 @@ import styled from 'styled-components'
 export const Container = styled.div`
 height: fit-content;
 position: relative;
+@media screen and(max-width: 1070px){
+    position: static;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
 padding-top: 10px;
 box-sizing: border-box;
 display: flex;
 flex-direction: column;
+padding-right: 10%;
+/* padding-left: 3%; */
 `
 export const Picture = styled.img`
-width: 77%;
+width: 90%;
+height: 534px;
+@media screen and (max-width: 1070px){
+    width: 100%;
+    height: fit-content;
+    margin-left: 3%;
+}
 `
 export const Line = styled.div`
-width: 90%;
+width: 100%;
+@media screen and (max-width: 1070px){
+display: flex;
+margin-left: 3%;
+}
 height: 15px;
 background-color:#1A2B6D;
 `
 export const Card = styled.div`
 display: flex; 
 flex-direction: column;
-width: 685px;
-height: 428px;
+
 
 background-color: #f2f2f2;
-padding: 30px 30px 30px 30px;
+padding: 30px 45px;
 `
 Card.Title = styled.h1`
 font-size: 66px;
 color: #1A2B6D;
 margin: 0;
 padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+font-family: 'Spinnaker', sans-serif;
+font-weight: 400;
+@media screen and(max-width: 1070px){
+    font-size: 50px;
+    display: flex;
+}
 line-height: 65px;
 `
 export const Content = styled.div`
@@ -40,6 +64,7 @@ margin-top: 50px;
 `
 export const MiniLine = styled.div`
 width: 113px;
+/* flex: 1; */
 height:4px;
 margin-top:5px;
 background-color: #1A2B6D;
@@ -48,18 +73,31 @@ background-color: #1A2B6D;
 Content.Text = styled.p`
 font-size: 22px;
 color: #000000;
-font-family: Helvetica, sans-serif;
-font-weight: 100;
 margin: 0;
 padding: 0;
-line-height: 40px;
+line-height: 35px;
 margin-left: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+font-family: "Manrope", sans-serif;
 `
 export const CardWrapper = styled.div`
 display: flex;
 flex-direction: column;
 position: absolute;
-left: 35%;
+@media screen and (max-width: 1070px){
+    /* position:  */
+    display: flex;
+    position: static;
+    margin:0;
+    width: 100%;
+    height: fit-content;
+    margin-left: 3%;
+}
+/* flex: 2; */
+/* z-index: 3; */
+height: 15%;
+margin-left: auto;
+left: 38%;
 top: 65%;
 `
 export const Buttons = styled.div`

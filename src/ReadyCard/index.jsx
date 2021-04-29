@@ -10,6 +10,7 @@ import {
   CardContent,
   CardLine,
   Card,
+  ItemWrapper,
 } from "./style";
 
 class ReadyCard extends React.Component {
@@ -17,27 +18,30 @@ class ReadyCard extends React.Component {
     return (
       <Container>
         <Line />
-        <CardWrapper>
-          <Card>
-            <Card.Title>Ready to find out more?</Card.Title>
-            <CardContent>
-              <CardLine />
+        <ItemWrapper>
+          <CardWrapper>
+            <Card>
+              <Card.Title>Ready to find out more?</Card.Title>
+              <CardContent>
+                <CardLine />
 
-              <Card.Text>
-                I'm a paragraph. Click here to add your own text and edit me.
-                <br />
-                click “Edit Text” or double click me to add your own content
-                <br />
-                and make changes to the font. I’m a great place for you to tell
-                <br />a story and let your users know a little more about you.
-              </Card.Text>
-            </CardContent>
-          </Card>
-          <Buttons>
-            <Button1>+</Button1>
-            <Button2>Ger free evaluation</Button2>
-          </Buttons>
-        </CardWrapper>
+                <Card.Text>
+                  I'm a paragraph. Click here to add your own text and edit me.
+                  <br />
+                  click “Edit Text” or double click me to add your own content
+                  <br />
+                  and make changes to the font. I’m a great place for you to
+                  tell
+                  <br />a story and let your users know a little more about you.
+                </Card.Text>
+              </CardContent>
+            </Card>
+            <Buttons>
+              <Button1>+</Button1>
+              <Button2>Ger free evaluation</Button2>
+            </Buttons>
+          </CardWrapper>
+        </ItemWrapper>
       </Container>
     );
   }

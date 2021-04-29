@@ -20,6 +20,7 @@ function App() {
       <Line />
       <Social />
       <Navbar />
+      <Switch>
 
       <Route exact path="/" component={Home} />
      
@@ -29,13 +30,12 @@ function App() {
       <Home />
       </Route>
       <Route exact path="/whychoose" component={WhyChoose} />
-      <Switch>
-        <Route exact path="/services"  component={Services}/>
+        <Route exact path="/home"  component={Home}/>
       <Route exact path="/footer" component={Footer} />
-      </Switch>
     
       <Route exact path="/industries" component={Industries} />
       <Route exact path="/learn" component={Learn} />
+      </Switch>
     </Router>
   );
 }

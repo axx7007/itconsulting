@@ -2,17 +2,16 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
 display: flex;
+padding-right: 20%;
 position:relative;
-width: 80%;
 height: 128px;
 align-items: center;
-justify-content: space-between;
-padding-left: 50px;
-margin-right: auto;
+padding-left: 3%;
 `
 export const Logo = styled.div`
-width: 97px !important;
+width: 140px !important;
 position: fixed;
+width: 13%;
 z-index: 3;
 height: 63px;
 cursor: pointer;
@@ -28,6 +27,7 @@ Logo.Title = styled.h1`
 font-size: 26px;
 color:#1A2B6D;
 font-weight: 900;
+white-space: nowrap;
 font-family: Arial;
 font-weight: 900;
 line-height: 63px;
@@ -38,29 +38,24 @@ padding: 0px 23px;
     color: #D41317;
 }
 `
-export const Hyper = styled.a`
-
-
+export const ItemWrapper = styled.div`
+display: flex;
+margin-left: auto;
 `
+
 export const Menu = styled.div`
 display: flex;
-justify-content: center;
-align-items: center;
-margin-left: auto;
 `
 export const MenuName = styled.a`
 display: flex;
 justify-content: center;
-width: 148px;
-height: 50px;
-line-height: 50px;
+white-space: nowrap;
 align-items: center;
-margin: auto;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: 900;
 font-size: 16px;
 color:${({ active }) => active ? "#D41317" : "#1A2B6D"};
-padding: 0px 10px;
+padding: 0% 5%;
 cursor: pointer;
 &:hover{
     color: #D41317;
@@ -68,8 +63,5 @@ cursor: pointer;
 `
 
 
-export const FadeWrapper = styled.div`
-display: flex;
-margin-left: auto;
-`
+
 

@@ -29,9 +29,14 @@ const Services = () => {
                 <Card.Title>{value.title}</Card.Title>
                 <Card.Text>{value.text}</Card.Text>
               </Fade>
-              <NavLink style={{ textDecoration: "none" }} to="/learn">
-                <Button>+ Learn More</Button>
-              </NavLink>
+              <Button>
+                <NavLink
+                  style={{ textDecoration: "none", color: "#d41317" }}
+                  to="/learn"
+                >
+                  + Learn More
+                </NavLink>
+              </Button>
             </Card>
           );
         })}

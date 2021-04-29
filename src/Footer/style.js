@@ -20,8 +20,13 @@ letter-spacing: 4px;
 `
 export const InputWrapper = styled.div`
 display: flex;
+flex: 6;
 flex-direction: column;
-margin-left: ${({margin})=>margin?'70px':'0px'};
+@media screen and (max-width: 1070px){
+    display: flex;
+    margin: 0;
+}
+margin-left: ${({margin})=>margin?'3%':'0px'};
 /* border: 1px solid white; */
 `
 export const InputName = styled.h4`
@@ -34,8 +39,7 @@ margin-top:30px;
 `
 
 export const Input = styled.input`
-width: 400px;
-height:42px;
+flex: 1;
 background-color: #1A2B6D;
 border: none;
 outline: none;
@@ -50,13 +54,26 @@ margin-top: 10px;
     border: 1px solid #ffffff;
 }
 `
+export const SubmitWrapper = styled.div`
+display: flex;
+flex: 1;
+justify-content: center;
+`
 export const Inputs = styled.div`
 display: flex;
-justify-content: space-between;
+flex-direction: ${({text})=>text?"column":"row"};
+width: 100%;
+flex: 12;
+height: fit-content;
+@media screen and (max-width:1070px){
+    display: flex;
+    flex-direction: column;
+}
 `
 export const TextArea = styled.textarea`
-width: 860px;
+flex: 1;
 height: 99px;
+
 border: none;
 border-bottom: 1px solid #ffffff;
 background-color: #1A2B6D;
@@ -74,10 +91,9 @@ cursor: pointer;
 background-color: #1A2B6D;
 font-size: 22px;
 letter-spacing:2px; 
-color: #ffffff;
 margin-top: 20px;
+color: #ffffff;
 /* align-items: center; */
-margin-left: 390px;
 font-weight: 500;
 &:hover{
     background-color: #D41317;
@@ -87,7 +103,7 @@ Inputs.Adress = styled.p`
 font-size: 13px;
 color: #FFFFFF;
 letter-spacing: 1.8px;
-margin-top: 20px;
+/* margin-top: 10px; */
 font-weight: 600;
 `
 

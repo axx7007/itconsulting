@@ -4,7 +4,7 @@ import { Container } from "./style";
 
 const WhyChoose = () => {
   return (
-    <Container>
+    <Container id="choose">
       <Header />
     </Container>
   );

@@ -10,6 +10,7 @@ import {
   Content,
   MiniContent,
   WhyButton,
+  MainContent,
 } from "./style";
 import why from "../assets/why.jpg";
 import { Link } from "react-router-dom";
@@ -22,28 +23,29 @@ const ChooseHeader = () => {
           <Fade left>Order</Fade>
         </WhyButton>
       </Link>
-      <WhyCard>
-        <WhyCard.Title>
-          <Fade left>
-            Why Choose
-            <br /> ITG. Consulting?
-          </Fade>
-        </WhyCard.Title>
-      </WhyCard>
-      <Content>
-        {whydata.map((value, index) => {
-          return (
-            <MiniContent>
-              <Fade top cascade>
-                <MiniContent.Title>{value.number}</MiniContent.Title>
-                <MiniContent.Text>{value.text}</MiniContent.Text>
-              </Fade>
-            </MiniContent>
-          );
-        })}
-      </Content>
-
-      <Footer why />
+      <MainContent>
+        <WhyCard>
+          <WhyCard.Title>
+            <Fade left>
+              Why Choose
+              <br /> ITG. Consulting?
+            </Fade>
+          </WhyCard.Title>
+        </WhyCard>
+        <Content>
+          {whydata.map((value, index) => {
+            return (
+              <MiniContent>
+                <Fade top cascade>
+                  <MiniContent.Title>{value.number}</MiniContent.Title>
+                  <MiniContent.Text>{value.text}</MiniContent.Text>
+                </Fade>
+              </MiniContent>
+            );
+          })}
+        </Content>
+      </MainContent>
+      <Footer />
     </Container>
   );
 };
