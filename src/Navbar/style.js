@@ -7,6 +7,11 @@ position:relative;
 height: 128px;
 align-items: center;
 padding-left: 3%;
+@media screen and (max-width: 599px){
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
 `
 export const Logo = styled.div`
 width: 140px !important;
@@ -16,6 +21,11 @@ z-index: 3;
 height: 63px;
 cursor: pointer;
 border: 5px solid #1A2B6D;
+@media screen and (max-width: 599px){
+    display: none;
+    position: static;
+    z-index:0;
+}
 &:hover{
     border: 5px solid #D41317;
     color: #D41317;
@@ -34,8 +44,13 @@ line-height: 63px;
 margin: 0;
 padding: 0;
 padding: 0px 23px;
+
 &:hover{
     color: #D41317;
+}
+@media screen and (max-width: 599px){
+    display: none;
+    position: static;
 }
 `
 export const ItemWrapper = styled.div`

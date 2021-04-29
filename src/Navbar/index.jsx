@@ -26,10 +26,8 @@ class Navbar extends React.Component {
             <Menu>
               <NavLink
                 style={{ marginLeft: "5%" }}
-                style={({ textDecoration: "none" }, { marginRight: "5%" })}
-                activeStyle={
-                  ({ textDecoration: "none" }, { marginRight: "5%" })
-                }
+                style={{ textDecoration: "none", marginRight: "5%" }}
+                activeStyle={{ textDecoration: "none", marginRight: "5%" }}
                 to="/home"
               >
                 <MenuName

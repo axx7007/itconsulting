@@ -17,8 +17,8 @@ function App() {
   return (
     
     <Router>
-      <Line />
       <Social />
+      <Line />
       <Navbar />
       <Switch>
 

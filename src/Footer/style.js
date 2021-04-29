@@ -11,6 +11,10 @@ height: 600px;
 background-color: #1A2B6D;
 padding: 0% 20%;
 margin-top: ${({why})=>why?'200px':'0px'};
+@media screen and (max-width: 1070px){
+    padding: 0% 10%;
+    height: fit-content;
+}
 `
 Container.Title = styled.h1`
 color: #ffffff;

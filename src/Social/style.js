@@ -12,9 +12,9 @@ flex-direction: column;
 width: 50px;
 height: fit-content;
 align-items: center;
-margin-left: 1450px;
 z-index: 3;
-margin-top: 320px;
+margin-left: 95%;
+margin-top: 15%;
 `
 
 export const FacebookIcon = styled(Facebook)`
