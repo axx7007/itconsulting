@@ -69,7 +69,7 @@ export const ItemWrapper = styled.div`
 display: flex;
 margin-left: auto;
 @media screen and (max-width: 599px){
-    margin: 0;
+    margin: 70px;
 }
 `
 
