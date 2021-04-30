@@ -12,8 +12,8 @@ padding-left: 3%;
 }
 @media screen and (max-width: 599px){
     display: flex;
-    flex-direction: column;
     position: static;
+    height: 50px;
 }
 `
 export const Logo = styled.div`
@@ -33,8 +33,8 @@ border: 5px solid #1A2B6D;
     border: 5px solid #D41317;
     color: #D41317;
 }
-
 `
+
 
 Logo.Title = styled.h1`
 font-size: 26px;
@@ -78,7 +78,12 @@ cursor: pointer;
 &:hover{
     color: #D41317;
 }
+@media screen and (max-width: 599px){
+    font-size: 10px;
+    padding:0% 5%;
+}
 `
+
 
 
 

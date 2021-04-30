@@ -11,7 +11,9 @@ import {
   MiniLine,
   Buttons,
   Button1,
+  MobileLogo,
 } from "./style";
+
 import MainPicture from "../assets/main.jpg";
 import Fade from "react-reveal/Fade";
 
@@ -21,6 +23,9 @@ class Header extends React.Component {
       <Container>
         <Picture src={MainPicture} />
         <Line />
+        <MobileLogo>
+          <MobileLogo.Title>PRO-IT</MobileLogo.Title>
+        </MobileLogo>
         <CardWrapper>
           <Fade left>
             <Card>

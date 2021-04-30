@@ -15,6 +15,14 @@ align-items: center;
 z-index: 3;
 margin-left: 95%;
 margin-top: 15%;
+@media screen and (max-width: 599px){
+display: flex;
+margin-left: 82%;
+position: fixed;
+z-index: 3;
+margin-top: 58%;
+
+}
 `
 
 export const FacebookIcon = styled(Facebook)`

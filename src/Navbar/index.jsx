@@ -1,8 +1,15 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
-import { BrowserRouter, NavLink } from "react-router-dom";
-import { Container, Logo, Menu, ItemWrapper, MenuName } from "./style";
+import { NavLink } from "react-router-dom";
+import {
+  Container,
+  Logo,
+  Menu,
+  ItemWrapper,
+  MobileLogo,
+  MenuName,
+} from "./style";
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -21,6 +28,7 @@ class Navbar extends React.Component {
         <Logo>
           <Logo.Title>PRO-IT</Logo.Title>
         </Logo>
+        
         <ItemWrapper>
           <Fade right>
             <Menu>

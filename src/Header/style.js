@@ -5,18 +5,50 @@ import styled from 'styled-components'
 export const Container = styled.div`
 height: fit-content;
 position: relative;
+padding-top: 10px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+padding-right: 10%;
 @media screen and(max-width: 1070px){
     position: static;
     display: flex;
     flex-direction: column;
     padding-left: 5%;
 }
-padding-top: 10px;
-box-sizing: border-box;
-display: flex;
-flex-direction: column;
-padding-right: 10%;
-/* padding-left: 3%; */
+@media screen and (max-width: 599px){
+    padding: 0;
+    position: relative;
+}
+`
+export const MobileLogo = styled.div`
+width: 70px !important;
+height: 40px;
+display: none;
+align-items: center;
+justify-content: center;
+border: 3px solid #1A2B6D;
+@media screen and (max-width: 599px){
+    display: flex;
+    position: absolute;
+    left:10px;
+    top: 10px;
+    &:hover{
+        color: #D41317;
+        
+    }
+}
+`
+MobileLogo.Title = styled.h4`
+display: none;
+margin: 0;
+padding: 0;
+color: #1A2B6D;
+font-weight:900;
+line-height: 40px;
+@media screen and (max-width: 599px){
+    display: flex;
+}
 `
 export const Picture = styled.img`
 width: 90%;
@@ -26,12 +58,18 @@ height: 534px;
     height: fit-content;
     margin-left: 3%;
 }
+@media screen and (max-width: 599px){
+    margin:0;
+}
 `
 export const Line = styled.div`
 width: 100%;
 @media screen and (max-width: 1070px){
 display: flex;
 margin-left: 3%;
+}
+@media screen and (max-width: 599px){
+    margin:0;
 }
 height: 15px;
 background-color:#1A2B6D;
