@@ -7,6 +7,9 @@ position:relative;
 height: 128px;
 align-items: center;
 padding-left: 3%;
+@media screen and (max-width: 1070px){
+    display: flex;
+}
 @media screen and (max-width: 599px){
     display: flex;
     flex-direction: column;
