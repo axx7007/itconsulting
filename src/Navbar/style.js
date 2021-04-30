@@ -14,6 +14,7 @@ padding-left: 3%;
     display: flex;
     position: static;
     height: 50px;
+    padding: 0;
 }
 `
 export const Logo = styled.div`
@@ -65,6 +66,9 @@ padding: 0px 23px;
 export const ItemWrapper = styled.div`
 display: flex;
 margin-left: auto;
+@media screen and (max-width: 599px){
+    margin-left: 0;
+}
 `
 
 export const Menu = styled.div`
