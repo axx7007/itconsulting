@@ -15,6 +15,7 @@ padding-left: 3%;
     position: static;
     height: 50px;
     padding: 0;
+    margin:0;
 }
 `
 export const Logo = styled.div`
@@ -30,6 +31,8 @@ border: 5px solid #1A2B6D;
     color: #D41317;
 }
 @media screen and (max-width: 599px){
+    padding: 0;
+    margin:0;
     display: flex;
     justify-content: center;
     align-items: center;
