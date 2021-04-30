@@ -33,10 +33,9 @@ border: 5px solid #1A2B6D;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px !important;
-    height: 40px;
+    width: 65px !important;
+    height: 30px;
     border: 3px solid #1A2B6D;
-    margin-top: 30px;
 }
 `
 
@@ -67,7 +66,7 @@ export const ItemWrapper = styled.div`
 display: flex;
 margin-left: auto;
 @media screen and (max-width: 599px){
-    margin-left: 0;
+    margin: 0;
 }
 `
 
