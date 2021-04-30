@@ -24,14 +24,18 @@ z-index: 3;
 height: 63px;
 cursor: pointer;
 border: 5px solid #1A2B6D;
-@media screen and (max-width: 599px){
-    display: none;
-    position: static;
-    z-index:0;
-}
 &:hover{
     border: 5px solid #D41317;
     color: #D41317;
+}
+@media screen and (max-width: 599px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px !important;
+    height: 40px;
+    border: 3px solid #1A2B6D;
+    margin-top: 30px;
 }
 `
 
@@ -52,8 +56,10 @@ padding: 0px 23px;
     color: #D41317;
 }
 @media screen and (max-width: 599px){
-    display: none;
-    position: static;
+    display: flex;
+    padding:0;
+    font-size: 15px;
+    
 }
 `
 export const ItemWrapper = styled.div`

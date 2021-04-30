@@ -29,7 +29,7 @@ align-items: center;
 justify-content: center;
 border: 3px solid #1A2B6D;
 @media screen and (max-width: 599px){
-    display: flex;
+    display: none;
     position: absolute;
     left:10px;
     top: 10px;
@@ -47,7 +47,7 @@ color: #1A2B6D;
 font-weight:900;
 line-height: 40px;
 @media screen and (max-width: 599px){
-    display: flex;
+    display: none;
 }
 `
 export const Picture = styled.img`
