@@ -48,7 +48,7 @@ padding: 5% 15%;
 @media screen and (max-width: 599px){
     display: flex;
     flex: 1;
-    /* padding:0; */
+    padding:5% 12%;
 }
 `
 Card.Title = styled.div`
@@ -59,6 +59,7 @@ letter-spacing: 4px;
 font-family: 'Spinnaker', sans-serif;
 @media screen and (max-width: 599px){
     font-size: 41px;
+    
 }
 `
 export const CardContent = styled.div`
