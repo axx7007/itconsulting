@@ -21,6 +21,9 @@ color: #ffffff;
 font-size: 35px;
 text-align:center;
 letter-spacing: 4px;
+@media screen and (max-width: 599px){
+    font-size: 25px;
+}
 `
 export const InputWrapper = styled.div`
 display: flex;
@@ -40,6 +43,9 @@ letter-spacing: 2px;
 margin: 0;
 padding: 0;
 margin-top:30px;
+@media screen and (max-width: 599px){
+    font-size: 13px;
+}
 `
 
 export const Input = styled.input`
@@ -56,6 +62,9 @@ margin-top: 10px;
 
 &:hover{
     border: 1px solid #ffffff;
+}
+@media screen and (max-width: 599px){
+    font-size: 16px;
 }
 `
 export const SubmitWrapper = styled.div`

@@ -27,12 +27,9 @@ class ReadyCard extends React.Component {
 
                 <Card.Text>
                   I'm a paragraph. Click here to add your own text and edit me.
-                  <br />
                   click “Edit Text” or double click me to add your own content
-                  <br />
                   and make changes to the font. I’m a great place for you to
-                  tell
-                  <br />a story and let your users know a little more about you.
+                  tell a story and let your users know a little more about you.
                 </Card.Text>
               </CardContent>
             </Card>

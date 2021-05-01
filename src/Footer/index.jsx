@@ -38,7 +38,9 @@ const Footer = (props) => {
           Address. 500 Terry Francois Street San Francisco, CA 94158
         </Inputs.Adress>
         <Inputs.Adress>Tel : +998 33 262 7007</Inputs.Adress>
-        <Inputs.Adress>Email : infomysite@gmail.com</Inputs.Adress>
+        <Inputs.Adress>
+          Email : xojiakbarabduvaxobov7007@gmail.com
+        </Inputs.Adress>
       </Inputs>
       <Inputs.Adress>
         & 2023 by ITG. Proudly created with @axx7007

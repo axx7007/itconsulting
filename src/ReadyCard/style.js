@@ -59,7 +59,7 @@ letter-spacing: 4px;
 font-family: 'Spinnaker', sans-serif;
 @media screen and (max-width: 599px){
     font-size: 41px;
-    
+
 }
 `
 export const CardContent = styled.div`
@@ -67,14 +67,14 @@ display: flex;
 margin-top: 50px;
 `
 export const CardLine = styled.div`
-width: 113px;
+width: 15%;
 height: 4px;
 background-color: #1A2B6D;
 margin: 13px 5px;
 `
 
 Card.Text = styled.p`
-font-family: Nunito;
+width: 85%;
 font-size: 20px;
 line-height: 40px;
 letter-spacing: 1px;
@@ -84,6 +84,11 @@ padding: 0;
 margin-left: 30px;
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 font-family: "Manrope", sans-serif;
+@media screen and (max-width: 599px){
+    font-size: 16px;
+    line-height: 30px;
+}
+
 `
 export const Buttons = styled.div`
 display: flex;
