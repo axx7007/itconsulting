@@ -27,6 +27,9 @@ padding: 0;
 font-weight: 100;
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 font-family: 'Spinnaker', sans-serif;
+@media screen and (max-width: 599px){
+    font-size: 45px;
+}
 `
 Container.Text = styled.p`
 color: #ffffff;
@@ -34,6 +37,9 @@ font-size: 16px;
 line-height: 35px;
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 font-family: "Manrope", sans-serif;
+@media screen and (max-width: 599px){
+    line-height: 30px;
+}
 `
 export const Content = styled.div`
 padding: 0% 15%;

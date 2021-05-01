@@ -107,7 +107,6 @@ line-height: 65px;
 `
 export const Content = styled.div`
 display: flex;
-border: 1px solid black;
 margin-top: 50px;
 `
 export const MiniLine = styled.div`
@@ -121,34 +120,29 @@ background-color: #1A2B6D;
 
 Content.Text = styled.p`
 font-size: 22px;
-width: 60%;
-/* flex: 6; */
+width: 75%;
 color: #000000;
 margin: 0;
-border: 1px solid black;
 padding: 0;
 line-height: 35px;
-/* margin-left: 30px; */
+margin-left: 30px;
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 font-family: "Manrope", sans-serif;
 @media screen and (max-width: 599px){
-    font-size: 15px;
+    font-size: 16px;
     line-height:25px;
+    width:70%;
 }
 `
 export const CardWrapper = styled.div`
 display: flex;
-/* flex:1; */
+width: 50%;
 flex-direction: column;
 position: absolute;
-/* flex: 2; */
-/* z-index: 3; */
 height: 15%;
-margin-left: auto;
 left: 38%;
 top: 65%;
 @media screen and (max-width: 1070px){
-    /* position:  */
     display: flex;
     position: static;
     margin:0;
