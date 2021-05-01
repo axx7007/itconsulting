@@ -36,9 +36,10 @@ border: 5px solid #1A2B6D;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65px !important;
-    height: 30px;
+    width: 70px !important;
+    height: 40px;
     border: 3px solid #1A2B6D;
+    margin-top:30px;
 }
 `
 
@@ -69,7 +70,7 @@ export const ItemWrapper = styled.div`
 display: flex;
 margin-left: auto;
 @media screen and (max-width: 599px){
-    margin-left: auto;
+    margin-left: 25px;
 }
 `
 

@@ -19,6 +19,7 @@ padding-right: 10%;
 @media screen and (max-width: 599px){
     padding: 0;
     position: relative;
+    padding: 0;
 }
 `
 export const MobileLogo = styled.div`
@@ -60,6 +61,8 @@ height: 534px;
 }
 @media screen and (max-width: 599px){
     margin:0;
+    padding: 0;
+    width: 100%;
 }
 `
 export const Line = styled.div`
@@ -81,6 +84,9 @@ flex-direction: column;
 
 background-color: #f2f2f2;
 padding: 30px 45px;
+@media screen and (max-width: 599px){
+    /* padding:0; */
+}
 `
 Card.Title = styled.h1`
 font-size: 66px;
@@ -90,19 +96,24 @@ padding: 0;
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 font-family: 'Spinnaker', sans-serif;
 font-weight: 400;
+line-height: 65px;
 @media screen and(max-width: 1070px){
     font-size: 50px;
     display: flex;
 }
-line-height: 65px;
+@media screen and (max-width: 599px){
+    font-size: 46px;
+}
 `
 export const Content = styled.div`
 display: flex;
+border: 1px solid black;
 margin-top: 50px;
 `
 export const MiniLine = styled.div`
-width: 113px;
-/* flex: 1; */
+width:15%;
+
+/* flex: 2; */
 height:4px;
 margin-top:5px;
 background-color: #1A2B6D;
@@ -110,18 +121,32 @@ background-color: #1A2B6D;
 
 Content.Text = styled.p`
 font-size: 22px;
+width: 60%;
+/* flex: 6; */
 color: #000000;
 margin: 0;
+border: 1px solid black;
 padding: 0;
 line-height: 35px;
-margin-left: 30px;
+/* margin-left: 30px; */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 font-family: "Manrope", sans-serif;
+@media screen and (max-width: 599px){
+    font-size: 15px;
+    line-height:25px;
+}
 `
 export const CardWrapper = styled.div`
 display: flex;
+/* flex:1; */
 flex-direction: column;
 position: absolute;
+/* flex: 2; */
+/* z-index: 3; */
+height: 15%;
+margin-left: auto;
+left: 38%;
+top: 65%;
 @media screen and (max-width: 1070px){
     /* position:  */
     display: flex;
@@ -131,12 +156,9 @@ position: absolute;
     height: fit-content;
     margin-left: 3%;
 }
-/* flex: 2; */
-/* z-index: 3; */
-height: 15%;
-margin-left: auto;
-left: 38%;
-top: 65%;
+@media screen and (max-width: 599px){
+    margin:0;
+}
 `
 export const Buttons = styled.div`
 display: flex;
