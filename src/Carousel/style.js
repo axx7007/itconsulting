@@ -24,6 +24,9 @@ font-family: 'Spinnaker', sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 font-family: 'Spinnaker', sans-serif;
+@media screen and (max-width: 599px){
+    font-size: 22px;
+}
 `
 
 Container.Text = styled.div`
@@ -36,6 +39,10 @@ margin-top: 20px;
     font-size: 28px;
     @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 font-family: 'Spinnaker', sans-serif;
+}
+@media screen and (max-width: 599px){
+    font-size: 17px;
+    line-height: 34px;
 }
 `
 

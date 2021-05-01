@@ -12,6 +12,9 @@ flex-direction: column;
 export const ItemWrapper = styled.div`
 display: flex;
 padding: 0% 13%;
+@media screen and (max-width: 599px){
+    padding: 0;
+}
 `
 export const TopLine = styled.div`
 /* width: 15px; */
@@ -42,6 +45,11 @@ flex-direction: column;
 background-color: #F2F2F2;
 padding: 5% 15%;
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+@media screen and (max-width: 599px){
+    display: flex;
+    flex: 1;
+    /* padding:0; */
+}
 `
 Card.Title = styled.div`
 font-size: 60px;
@@ -49,6 +57,9 @@ color: #1A2B6D;
 letter-spacing: 4px;
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 font-family: 'Spinnaker', sans-serif;
+@media screen and (max-width: 599px){
+    font-size: 41px;
+}
 `
 export const CardContent = styled.div`
 display: flex;
